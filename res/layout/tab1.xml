@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="795dp"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/table_countLamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text_countLamp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Anzahl der Lampen"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp" />
+          
+
+                    <EditText
+                        android:id="@+id/edit_countLamp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:inputType="numberDecimal" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/table_costLamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text_costLamp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kosten einer Lampe"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_costLamp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:inputType="numberDecimal" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/table_Platzhalter"
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp" >
+
+                    <TextView
+                        android:id="@+id/text_costLamp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp" />
+                </TableRow>
+
+<!--                 <TableRow -->
+<!--                     android:id="@+id/table_spinner_sizeLamp" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" > -->
+
+<!--                     <TextView -->
+<!--                         android:id="@+id/text_spinner_sizeLamp" -->
+<!--                         android:layout_width="match_parent" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:text="Größe einer Lampe" -->
+<!--                         android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!--                         android:textSize="15sp" /> -->
+
+<!--                     <Spinner -->
+<!--                         android:id="@+id/spinner_sizeLamp" -->
+<!--                         android:layout_width="fill_parent" -->
+<!--                         android:layout_height="wrap_content"/> -->
+<!--                 </TableRow> -->
+
+                <TableRow
+                    android:id="@+id/table_consumLampOld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text_consumLampOld"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Verbrauch der alten Lampe"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_consumLampOld"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:inputType="number" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/table_consumLampNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text_consumLampNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Verbrauch der neuen Lampe"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_consumLampNew"
+                        android:layout_width="fill_parent"
+                        android:gravity="right"
+                        android:layout_height="wrap_content"
+                        android:ems="10" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/table_costpkWh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text_costpkWh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stromkosten pro kWh"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_costpkWh"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:inputType="numberDecimal"
+                        android:text="0,25 €" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/table_hourspDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text_hourspDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stunden pro Tag"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_hourspDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:inputType="numberDecimal" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/table_dayspWeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text_dayspWeek"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tage pro Woche"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_dayspWeek"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:inputType="number" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/table_weekspYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text_weekspYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wochen pro Jahr"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_weekspYear"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:inputType="numberDecimal" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/table_hourspYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text_hourspYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tage pro Jahr"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_hourspYearr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:inputType="numberDecimal" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/table_costAssemblypLamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text_costAssemblypLamp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Montagekosten pro Lampe"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp" />
+
+                    <Switch
+                        android:id="@+id/switch_costAssemblypLamp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:textOff="Keine"
+                        android:gravity="right"
+                        android:textOn="5 € pro Lampe" />
+                </TableRow>
+                
+                 <TableRow
+                    android:id="@+id/table_spinnerTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text_spinnerTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Auswahl der Lampe"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_Test"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+                
+                
+            </TableLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+
+</RelativeLayout>
